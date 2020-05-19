@@ -1,0 +1,44 @@
+#login-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-page h1 {
+  text-align: center;
+}
+
+#login-page form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+#login-page form .form-group {
+  margin-bottom: 1rem;
+}
+
+#login-page form .form-group .form-control {
+  width: 100%;
+  padding: 1rem;
+}
+
+#login-page form .form-group label.error {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+#login-page form .button-wrapper {
+  text-align: center;
+}
+
+#login-page form .button-wrapper button {
+  background: #46c4f6;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid skyblue;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Login.css.map */

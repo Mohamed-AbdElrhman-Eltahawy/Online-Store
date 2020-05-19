@@ -1,0 +1,42 @@
+#login-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    h1 {
+        text-align: center;
+    }
+    form {
+        width: 60%;
+        margin: 2rem auto;
+
+        .form-group {
+            margin-bottom: 1rem;
+            .form-control {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            label {
+                &.error {
+                    display: block;
+                    font-weight: bold;
+                    margin-top: 0.5rem;
+                    color: red;
+                }
+            }
+        }
+        .button-wrapper {
+            text-align: center;
+
+            button {
+                background: rgb(70, 196, 246);
+                color: #fff;
+                padding: 1rem 3rem;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 1px solid skyblue;
+                font-size: 1rem;
+                font-weight: bold;
+
+            } 
+        }
+    }
+}
