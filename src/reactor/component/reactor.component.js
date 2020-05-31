@@ -88,6 +88,14 @@ class ReactorComponent extends Component {
   }
 
   /**
+   * Get component children
+   * @param {array} args
+   * @returns {array|null}
+   */
+  children() {
+    return this.props.children;
+  }
+  /**
    *
    * Get the value of given'dot.notation' key from state
    * @param {string} key

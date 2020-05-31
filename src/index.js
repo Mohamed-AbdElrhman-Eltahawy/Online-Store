@@ -1,5 +1,5 @@
 import 'Shared/config';
-import Reactor from './Core/Reactor';
+import Reactor from './reactor/Reactor';
 import 'Modules/Admins/routes';
 
 const reactor = new Reactor();

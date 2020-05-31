@@ -1,8 +1,7 @@
-import config from 'Core/config';
+import config from 'reactor/config';
 
 config.set({
-    name: {
-        first: 'mohamed',
-        last: 'Abdelrhman'
+    endPoint: {
+        baseUrl: 'https://apps.mentoor.io/shera2/api/admin/',
     }
 }) 

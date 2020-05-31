@@ -1,7 +1,8 @@
 import React from "react";
 import events from "@flk/events";
 import Is from "@flk/supportive-is";
-import ReactorComponent from "Core/component/reactor.component";
+import PropTypes from "prop-types";
+import ReactorComponent from "reactor/component/reactor.component";
 
 export default class FormInput extends ReactorComponent {
   state = {
@@ -13,11 +14,12 @@ export default class FormInput extends ReactorComponent {
     email: "Invalid email address",
   };
 
-  constructor(props) {
-    super(props);
+  inputReference = React.createRef();
 
-    this.inputReference = React.createRef();
-
+  /**
+   * {@inheritdoc}
+   */
+  init() {
     events.on("form.validation", (form) => {
       //validate the input
 
@@ -90,3 +92,15 @@ export default class FormInput extends ReactorComponent {
     );
   }
 }
+
+FormInput.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
+  required: PropTypes.bool,
+};
+
+FormInput.defaultProps = {
+  type: "text",
+};
